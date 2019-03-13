@@ -1,0 +1,27 @@
+import processing.core.PApplet;
+import processing.core.PImage;
+
+import java.awt.*;
+
+public class SpielStarten extends PApplet {
+
+
+    public static void main(String[] args) {
+        PApplet.main(Charakter.class, args);
+        //PApplet.main(SpielStarten.class, args);
+        System.out.println();
+        Charakter held = new Charakter();
+        System.out.println("das ist x " + held.getPositionX()
+        );
+        System.out.println("das ist y " + held.getPositionY() );
+        held.setPositionY(200);
+        held.setPositionX(200);
+
+        System.out.println("das ist x " + held.getPositionX()
+        );
+        System.out.println("das ist y " + held.getPositionY() );
+
+    }
+}
+
+
